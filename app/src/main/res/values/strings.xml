@@ -39,4 +39,8 @@
     <string name="button_cancel">Annuler</string>
     <string name="button_save">Soumettre</string>
     <string name="button_delete">Supprimer</string>
+    <string name="item_student_nom">Nom</string>
+    <string name="item_student_prenom">Prénom</string>
+    <string name="item_salon">Salon</string>
+
 </resources>
