@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AppContactSalon</string>
+
+    <string name="item_student_nom">Nom</string>
+    <string name="item_student_prenom">Prénom</string>
+
+    <string name="item_salon">Salon</string>
+
 </resources>

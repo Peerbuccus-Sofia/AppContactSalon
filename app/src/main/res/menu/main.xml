@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuItemAddSalon" android:title="Créer un salon"/>
+    <item android:id="@+id/menuItemListSalon" android:title="Salons" />
+    <item android:id="@+id/menuItemAddStudent" android:title="Ajouter étudiant" />
+    <item android:id="@+id/menuItemStat" android:title="Statistique" />
+</menu>
