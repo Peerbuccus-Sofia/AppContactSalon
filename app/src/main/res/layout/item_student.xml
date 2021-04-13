@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+
+        android:src="@drawable/ic_contact_foreground" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="7"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/textViewItemStudentNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FCFDFD"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/item_student_nom"
+            android:textAlignment="viewStart"
+            android:textSize="22sp"
+             />
+
+        <TextView
+             android:id="@+id/textViewItemStudentPrenom"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#FCFDFD"
+             android:text="@string/item_student_prenom"
+             android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_dialog_info"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+
+</LinearLayout>
