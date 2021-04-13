@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">AppContactSalon</string>
+    <string name="title_inscription">Inscription</string>
+    <string name="field_firstname">Prénom</string>
+    <string name="hint_firstname">Prénom</string>
+    <string name="field_lastname">Nom</string>
+    <string name="hint_lastname">Nom</string>
+    <string name="field_birthdate">Date de naissance</string>
+    <string name="hint_birthdate">Date de naissance</string>
+    <string name="field_address">Adresse</string>
+    <string name="hint_address">Adresse</string>
+    <string name="field_city">Ville</string>
+    <string name="hint_city">Ville</string>
+    <string name="field_postalcode">Code postal</string>
+    <string name="hint_postalcode">Code postal</string>
+    <string name="field_phone">Téléphone fixe</string>
+    <string name="hint_phone">Téléphone fixe</string>
+    <string name="field_mobilephone">Téléphone mobile</string>
+    <string name="hint_mobilephone">Téléphone mobile</string>
+    <string name="field_email">Email</string>
+    <string name="hint_email">Email</string>
+    <string name="field_chosencourse">Formation souhaitée</string>
+    <string name="hint_chosencourse">Formation souhaitée</string>
+    <string name="field_lastdiploma">Dernier diplôme obtenu</string>
+    <string name="hint_lastdiploma">Dernier diplôme obtenu</string>
+    <string name="field_coursetype">Formation</string>
+    <string name="field_coursetypeinitial">En initial</string>
+    <string name="field_coursetypealternance">En alternance</string>
+    <string-array name="field_chosencourse">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="button_cancel">Annuler</string>
+    <string name="button_save">Soumettre</string>
+    <string name="button_delete">Supprimer</string>
 </resources>
