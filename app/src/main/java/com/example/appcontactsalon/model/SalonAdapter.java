@@ -47,7 +47,7 @@ public class SalonAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(activity).inflate(R.layout.item_salon, parent, false);
         }
         TextView textViewSalon = convertView.findViewById(R.id.textViewSalon);
-        textViewSalon.setText(salons.get(position).getId());
+        textViewSalon.setText(salons.get(position).getLibelle());
         TextView textViewItemDateSalon = convertView.findViewById(R.id.textViewItemDateSalon);
         textViewItemDateSalon.setText((CharSequence) salons.get(position).getCreated_up());
 

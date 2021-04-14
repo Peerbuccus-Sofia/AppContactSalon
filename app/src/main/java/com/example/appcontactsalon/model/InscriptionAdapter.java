@@ -1,4 +1,4 @@
-package com.example.appcontactsalon;
+package com.example.appcontactsalon.model;
 
 import android.view.View;
 import android.view.ViewGroup;

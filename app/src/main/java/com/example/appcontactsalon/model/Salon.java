@@ -10,11 +10,6 @@ public class Salon implements Serializable {
 
     public Salon(){}
 
-    public Salon(String libelle, String created_up) {
-        this.libelle = libelle;
-        this.created_up = created_up;
-    }
-
     public Salon(Integer id, String libelle, String created_up) {
         this.id = id;
         this.libelle = libelle;

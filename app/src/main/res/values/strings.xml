@@ -43,4 +43,11 @@
     <string name="item_student_prenom">Prénom</string>
     <string name="item_salon">Salon</string>
 
+    <string name="title_addsalon">Créer un salon</string>
+    <string name="field_libelle">Libelle</string>
+    <string name="hint_libelle">Libelle du salon</string>
+    <string name="field_date">Date</string>
+    <string name="hint_date">Date</string>
+
+
 </resources>

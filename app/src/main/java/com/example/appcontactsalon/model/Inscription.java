@@ -1,4 +1,4 @@
-package com.example.appcontactsalon;
+package com.example.appcontactsalon.model;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

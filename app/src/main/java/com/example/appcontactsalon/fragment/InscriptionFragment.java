@@ -1,4 +1,4 @@
-package com.example.appcontactsalon;
+package com.example.appcontactsalon.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.appcontactsalon.R;
 
 public class InscriptionFragment extends Fragment implements View.OnClickListener {
     EditText firstName, lastName, birthDate, adress, city, postalCode, phone, mobilePhone, email, lastDiploma;
