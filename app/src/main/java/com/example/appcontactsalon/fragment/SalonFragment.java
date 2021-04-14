@@ -12,13 +12,14 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.example.appcontactsalon.R;
+import com.example.appcontactsalon.database.SalonRepository;
 import com.example.appcontactsalon.model.Salon;
 import com.example.appcontactsalon.model.SalonAdapter;
 
 import java.util.ArrayList;
 
 public class SalonFragment extends Fragment implements View.OnClickListener {
-    ListView salonListView;
+    ListView listViewSalons;
     TextView textViewSalon, textViewItemDate;
     ImageButton buttonDownload;
     Salon currentSalon;
@@ -32,24 +33,25 @@ public class SalonFragment extends Fragment implements View.OnClickListener {
         textViewSalon = v.findViewById(R.id.textViewSalon);
         textViewItemDate = v.findViewById(R.id.textViewItemDateSalon);
         buttonDownload = v.findViewById(R.id.imageButtonDownload);
-        //buttonDownload.setOnClickListener(this);
+        buttonDownload.setOnClickListener(this);
 
-
-        salonListView = v.findViewById(R.id.listViewSalons);
-        adapter = new SalonAdapter(getActivity(), sampleSalon());
-        salonListView.setAdapter(adapter);
-
-        registerForContextMenu(salonListView);
-
+        if(listViewSalons == null){
+            listViewSalons = v.findViewById(R.id.listViewSalons);
+            adapter = new SalonAdapter(getActivity(), sampleSalon());
+            listViewSalons.setAdapter(adapter);
+            registerForContextMenu(listViewSalons);
+        } else {
+            showListSalon();
+        }
         return v;
     }
 
     public ArrayList<Salon> sampleSalon(){
         ArrayList<Salon> salons = new ArrayList<>();
-        salons.add(new Salon("Salon de l'alternance", "2021-04-13"));
-        salons.add(new Salon("Salon de l'étudiant", "2021-05-13"));
-        salons.add(new Salon("Salon de l'alternance", "2021-06-10"));
-        salons.add(new Salon("Salon de l'alternance", "2021-04-13"));
+        salons.add(new Salon(1,"Salon de l'alternance", "2021-04-13"));
+        salons.add(new Salon(2,"Salon de l'étudiant", "2021-05-13"));
+        salons.add(new Salon(3,"Salon de l'alternance", "2021-06-10"));
+        salons.add(new Salon(4,"Salon de l'alternance", "2021-04-13"));
 
         return salons;
     }
@@ -60,11 +62,14 @@ public class SalonFragment extends Fragment implements View.OnClickListener {
         refresh();
     }
 
-    private void refresh(){
-        if(currentSalon!=null){
-            textViewSalon.setText(currentSalon.getLibelle());
-            textViewItemDate.setText((CharSequence) currentSalon.getCreated_up());
-        }
+    public void showListSalon(){
+        this.salons = SalonRepository.getInstance(getContext()).getAll();
+        refresh();
+    }
+
+    public void refresh(){
+        SalonAdapter salonAdapter = new SalonAdapter(getActivity(), salons);
+        listViewSalons.setAdapter(salonAdapter);
     }
 
     @Override
