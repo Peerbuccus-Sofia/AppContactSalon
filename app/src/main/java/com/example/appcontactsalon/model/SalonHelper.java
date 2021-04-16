@@ -29,10 +29,4 @@ public class SalonHelper {
         return salons;
     }
 
-    public static ArrayList<Salon> generateData(){
-        ArrayList<Salon> salons = new ArrayList<>();
-        salons.add(new Salon("Salon de l'alternance", "2021-06-02"));
-        return salons;
-    }
-
 }

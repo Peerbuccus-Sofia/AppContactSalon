@@ -38,7 +38,7 @@ public class SalonAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return salons.get(position).getId();
+        return position;
     }
 
     @Override
@@ -46,12 +46,12 @@ public class SalonAdapter extends BaseAdapter {
         if(convertView==null){
             convertView = LayoutInflater.from(activity).inflate(R.layout.item_salon, parent, false);
         }
-        TextView textViewSalon = convertView.findViewById(R.id.textViewSalon);
+        TextView textViewSalon = convertView.findViewById(R.id.textViewItemSalon);
         textViewSalon.setText(salons.get(position).getLibelle());
         TextView textViewItemDateSalon = convertView.findViewById(R.id.textViewItemDateSalon);
         textViewItemDateSalon.setText((CharSequence) salons.get(position).getCreated_up());
 
-       // ImageButton imageButtonDownload = convertView.findViewById((R.id.imageButtonDownload));
+        ImageButton imageButtonDownload = convertView.findViewById((R.id.imageButtonDownload));
 
         return convertView;
     }

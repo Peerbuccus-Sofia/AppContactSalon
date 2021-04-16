@@ -53,7 +53,7 @@
     <string name="field_libelle">Libelle</string>
     <string name="hint_libelle">Libelle du salon</string>
     <string name="field_date">Date</string>
-    <string name="hint_date">Date</string>
+    <string name="hint_date">Date du salon</string>
 
 
 </resources>

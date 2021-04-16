@@ -10,3 +10,4 @@ public interface IInscriptionRepository {
     public boolean remove(Inscription i);
     public ArrayList<Inscription> getAll();
 }
+

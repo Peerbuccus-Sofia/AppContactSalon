@@ -24,7 +24,7 @@ public class SalonRepository implements ISalonRepository {
     @Override
     public boolean add(Salon s) {
         ContentValues values = new ContentValues();
-        values.put("id", s.getId());
+        //values.put("id", s.getId());
         values.put("libelle", s.getLibelle());
         values.put("created_up", s.getCreated_up());
         long line = dbm.getWritableDatabase().insert("salon",null, values);
@@ -37,6 +37,8 @@ public class SalonRepository implements ISalonRepository {
         long line= dbm.getWritableDatabase().delete("salon", "id=?", identifier);
         return line != 0;
     }
+
+
 
     @Override
     public ArrayList<Salon> getAll() {
@@ -55,4 +57,10 @@ public class SalonRepository implements ISalonRepository {
         return salons;
 
     }
+
+    public int getIdMax(){
+        Cursor c = dbm.getReadableDatabase().rawQuery("select MAX(id) from salon", null);
+        return c.getInt(0);
+    }
+
 }

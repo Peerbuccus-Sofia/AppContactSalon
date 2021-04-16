@@ -4,23 +4,28 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 
 public class Salon implements Serializable {
-    private Integer id;
+    private String id;
     private String libelle;
     private String created_up;
 
     public Salon(){}
 
-    public Salon(Integer id, String libelle, String created_up) {
+    public Salon(String libelle, String created_up){
+        this.libelle = libelle;
+        this.created_up = created_up;
+    }
+
+    public Salon(String id, String libelle, String created_up) {
         this.id = id;
         this.libelle = libelle;
         this.created_up = created_up;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int String) {
         this.id = id;
     }
 
