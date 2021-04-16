@@ -7,15 +7,6 @@
     android:orientation="horizontal"
     android:paddingVertical="10dp">
 
-    <ImageButton
-        android:id="@+id/imageButtonDownload"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_weight="0"
-        android:src="@android:drawable/stat_sys_download"
-        android:tint="#020202"
-        app:srcCompat="@android:drawable/stat_sys_download"
-        tools:srcCompat="@android:drawable/stat_sys_download" />
 
     <LinearLayout
         android:layout_marginLeft="10dp"
@@ -26,7 +17,7 @@
 
 
         <TextView
-            android:id="@+id/textViewSalon"
+            android:id="@+id/textViewItemSalon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -41,9 +32,20 @@
             android:id="@+id/textViewItemDateSalon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:text="dateSalon" />
 
 
+    <ImageButton
+        android:id="@+id/imageButtonDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:src="@android:drawable/stat_sys_download"
+        android:tint="#020202"
+        app:srcCompat="@android:drawable/stat_sys_download"
+        tools:srcCompat="@android:drawable/stat_sys_download" />
+
     </LinearLayout>
+
 </LinearLayout>
