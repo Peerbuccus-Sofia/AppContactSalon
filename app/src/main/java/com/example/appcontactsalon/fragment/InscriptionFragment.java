@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.appcontactsalon.R;
+import com.example.appcontactsalon.model.Inscription;
 
 public class InscriptionFragment extends Fragment implements View.OnClickListener {
     EditText firstName, lastName, birthDate, adress, city, postalCode, phone, mobilePhone, email, lastDiploma;
@@ -63,11 +64,10 @@ public class InscriptionFragment extends Fragment implements View.OnClickListene
     public void onClick(View view) {
         Button button = (Button) view;
         if (button.equals(buttonSave)){
-
+       //     Inscription eleve = new Inscription(1, firstName.getText().toString(), lastName.getText().toString(), birthDate.getText().toString(), adress.getText().toString(), city.getText().toString(), postalCode.getText().toString(), phone.getText().toString(), mobilePhone.getText().toString(), email.getText().toString(), chosenCourse.getText().toString(), lastDiploma.getText().toString(), coursetypeinitial);
         }else if (button.equals(buttonCancel)){
 
         }else if (button.equals(buttonDelete)){
-
         }
     }
 }

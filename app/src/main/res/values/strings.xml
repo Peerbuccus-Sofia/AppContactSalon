@@ -27,14 +27,20 @@
     <string name="field_coursetypeinitial">En initial</string>
     <string name="field_coursetypealternance">En alternance</string>
     <string-array name="field_chosencourse">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>BTS SIO SLAM</item>
+        <item>Développeur Logiciel Bac+2</item>
+        <item>Concepteur développeur d'applications Bac+3</item>
+        <item>Analyste Développeur Bac+4</item>
+        <item>Architecte Technique en Informatique et Réseaux Bac+4/5</item>
+        <item>Master STL avec Sorbonne Université, Bac+5</item>
+        <item>BTS SIO SISR</item>
+        <item>Administrateur d'infrastructures sécurisées Bac+3</item>
+        <item>Architecte Technique en Informatique et Réseaux Bac+4/5</item>
+        <item>Master STL- SCIENCES ET TECHNOLOGIES DU LOGICIEL Bac+5</item>
+        <item>BTS COMPTABILITÉ ET GESTION - BTS CG Bac+2</item>
+        <item>GESTIONNAIRE PAIE Bac+2</item>
+        <item>DIPLÔME COMPTABILITÉ ET GESTION – DCG Bac+3</item>
+        <item>DIPLÔME SUPÉRIEUR DE COMPTABILITÉ ET DE GESTION – DSCG</item>
     </string-array>
     <string name="button_cancel">Annuler</string>
     <string name="button_save">Soumettre</string>
