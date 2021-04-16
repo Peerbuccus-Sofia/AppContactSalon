@@ -38,9 +38,7 @@ public class SalonFragment extends Fragment implements View.OnClickListener, Ada
         View v = inflater.inflate(R.layout.fragment_salon, null);
         textViewSalon = v.findViewById(R.id.textViewItemSalon);
         textViewItemDate = v.findViewById(R.id.textViewItemDateSalon);
-
         buttonDownload = v.findViewById(R.id.imageButtonDownload);
-
         listViewSalons = v.findViewById(R.id.listViewSalons);
         listViewSalons.setOnItemClickListener(this);
         showListSalon();

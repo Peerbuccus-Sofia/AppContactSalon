@@ -3,4 +3,6 @@
     <item android:id="@+id/menuItemAddSalon" android:title="Créer un salon"/>
     <item android:id="@+id/menuItemListSalon" android:title="Salons" />
     <item android:id="@+id/menuItemStat" android:title="Statistique" />
+    <item android:id="@+id/menuItemAddStudent" android:title="Ajouter étudiant" />
+
 </menu>

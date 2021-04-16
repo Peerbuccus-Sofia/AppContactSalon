@@ -25,7 +25,8 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table salon (id TEXT PRIMARY KEY AUTOINCREMENT, libelle TEXT, created_up TEXT)");
+        db.execSQL("create table salon (id INTEGER PRIMARY KEY AUTOINCREMENT, libelle TEXT, created_up TEXT)");
+        //db.execSQL("create table inscription (id INTEGER, firstname TEXT, lastname TEXT, birthdate TEXT, adress TEXT, city TEXT, postalcode INTEGER, phone TEXT, mobilephone TEXT, email TEXT, chosencourse TEXT, lastdiploma TEXT, coursetype TEXT)");
 
     }
 

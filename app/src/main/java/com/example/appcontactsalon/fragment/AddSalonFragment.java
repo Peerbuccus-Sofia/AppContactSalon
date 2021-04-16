@@ -27,7 +27,7 @@ import java.util.UUID;
 public class AddSalonFragment extends Fragment implements View.OnClickListener {
     EditText libelleView, dateView;
     Button buttonCancel, buttonSave;
-
+    Salon currentSalon;
     IOnSelectedSalon listenerSalon;
 
     public void setListenerSalon(IOnSelectedSalon listenerSalon) {
@@ -47,8 +47,6 @@ public class AddSalonFragment extends Fragment implements View.OnClickListener {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // int id = SalonRepository.getInstance(getContext()).getIdMax();
-
                 Salon salon = new Salon(libelleView.getText().toString(), dateView.getText().toString());
                 SalonRepository.getInstance(getContext()).add(salon);
                 listenerSalon.onSelectedSalon(salon);
@@ -60,6 +58,17 @@ public class AddSalonFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {}
         });
         return v;
+    }
+
+    public void setCurrentSalon(Salon salon){
+        this.currentSalon = salon;
+        refresh();
+    }
+
+    private  void refresh(){
+        if(currentSalon!=null){
+
+        }
     }
 
     @Override

@@ -85,8 +85,10 @@ public class MainActivity extends AppCompatActivity implements  IOnSelectedSalon
     public void onSelectedSalon(Salon salon){
         getSupportFragmentManager().beginTransaction()
                 .hide(addSalonFragment)
-                .hide(salonFragment)
+                .show(salonFragment)
                 .commit();
+        //addSalonFragment.setListenerSalon();
     }
+
 
 }

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 
 public class Salon implements Serializable {
-    private String id;
+    private int id;
     private String libelle;
     private String created_up;
 
@@ -15,17 +15,17 @@ public class Salon implements Serializable {
         this.created_up = created_up;
     }
 
-    public Salon(String id, String libelle, String created_up) {
+    public Salon(int id, String libelle, String created_up) {
         this.id = id;
         this.libelle = libelle;
         this.created_up = created_up;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(int String) {
+    public void setId(int id) {
         this.id = id;
     }
 
